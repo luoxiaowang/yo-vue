@@ -38,6 +38,11 @@ module.exports = {
       allChunks: true
     })
   ],
+  // 转化成es5的语法
+  babel: {
+      presets: ['es2015'],
+      plugins: ['transform-runtime']
+  },
   vue: {
     loaders: {
       css: ExtractTextPlugin.extract('css')

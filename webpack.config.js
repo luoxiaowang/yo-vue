@@ -20,5 +20,10 @@ module.exports = {
       { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]
   },
+  // 转化成es5的语法
+  babel: {
+      presets: ['es2015'],
+      plugins: ['transform-runtime']
+  },
   devtool: '#source-map'
 }
